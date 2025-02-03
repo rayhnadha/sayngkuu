@@ -1,0 +1,90 @@
+ body {
+     font-family: "Georgia", serif;
+     text-align: center;
+     background-color: #c134ec;
+     color: #333;
+     margin: 0;
+     padding: 0;
+ }
+
+ .container {
+     max-width: 800px;
+     margin: auto;
+     padding: 30px;
+     background: white;
+     border-radius: 20px;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+     text-align: center;
+ }
+
+ h1 {
+     color: #d63384;
+     font-size: 40px;
+     margin-bottom: 20px;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+ }
+
+ h2 {
+     font-size: 28px;
+     color: #a3a3a3;
+     margin-top: 30px;
+ }
+
+ .carousel {
+     position: relative;
+     overflow: hidden;
+     width: 100%;
+     max-width: 800px;
+     margin: 0 auto;
+ }
+
+ .carousel-images {
+     display: flex;
+     animation: carouselAnimation 30s linear infinite;
+     /* Durasi animasi */
+ }
+
+ .carousel img {
+     width: 20%;
+     /* Mengatur gambar agar mengisi seluruh lebar kontainer */
+     height: auto;
+     /* Menjaga proporsi gambar tetap */
+     border-radius: 25px;
+     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ @keyframes carouselAnimation {
+     0% {
+         transform: translateX(0);
+     }
+
+     100% {
+         transform: translateX(-50%);
+     }
+
+     /* Sesuaikan dengan jumlah gambar */
+ }
+
+ .caption {
+     margin-top: 10px;
+     font-size: 16px;
+     color: #444;
+     font-weight: bold;
+ }
+
+ .footer {
+     margin-top: 40px;
+     font-size: 16px;
+     color: #777;
+ }
+
+ video {
+     max-width: 100%;
+     border-radius: 10px;
+     margin-top: 10px;
+ }
+
+ .highlight {
+     color: #d63384;
+     font-weight: bold;
+ }
